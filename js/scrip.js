@@ -1,28 +1,37 @@
-// Función para enviar el formulario de contacto
-function enviarFormularioContacto() {
+
+function contacto() {
     var nombre = document.getElementById("nombre").value;
     var correo = document.getElementById("correo").value;
     var direccion = document.getElementById("direccion").value;
     var comuna = document.getElementById("comuna").value;
 
     alert("Nombre: " + nombre + "\nCorreo: " + correo + "\nDirección: " + direccion + "\nComuna: " + comuna);
+
+
+    document.getElementById("nombre").value = "";
+    document.getElementById("correo").value = "";
+    document.getElementById("direccion").value = "";
+    document.getElementById("comuna").selectedIndex = 0;
+
 }
 
-// Función para filtrar productos
+
+
+
 function filtrarProductos() {
     var categoria = document.getElementById("categoria").value;
     var nombre = document.getElementById("nombre").value.toLowerCase();
 
     var productos = [
-        { nombre: "Naranja", categoria: "Fruta" },
-        { nombre: "Polemo", categoria: "Fruta" },
-        { nombre: "piña", categoria: "Fruta" },
-        { nombre: "uva", categoria: "Fruta" },
-        { nombre: "zandia", categoria: "Fruta" },
-        { nombre: "papa", categoria: "Verdura" },
-        { nombre: "cebolla", categoria: "Verdura" },
-        { nombre: "zapallo", categoria: "Verdura" },
-        { nombre: "aji", categoria: "Verdura" },
+        { nombre: "🍊 Naranja", categoria: "Fruta" },
+        { nombre: "🍎 manzana", categoria: "Fruta" },
+        { nombre: "🍍 piña", categoria: "Fruta" },
+        { nombre: "🍇 uva", categoria: "Fruta" },
+        { nombre: "🍉 zandia", categoria: "Fruta" },
+        { nombre: "🥔 papa", categoria: "Verdura" },
+        { nombre: "🧅 cebolla", categoria: "Verdura" },
+        { nombre: "🥕 Zanahoria", categoria: "Verdura" },
+        { nombre: "🌶️ aji", categoria: "Verdura" },
         
         // Agrega más datos según sea necesario
     ];

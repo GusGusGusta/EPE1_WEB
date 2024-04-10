@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Filtro</title>
 </head>
 
     <body>
         <section >
-        <h1>Filtro de Productos</h1>
-    <label for="categoria">Categoría:</label>
-    <select id="categoria">
-        <option value="Todos">Todos</option>
-        <option value="Fruta">Fruta</option>
-        <option value="Verdura">Verdura</option>
-    </select>
-    <br>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre">
-    <div id="output"></div>
-    <script src="js/scrip.js"></script>
-    <button onclick="filtrarProductos()">Filtrar</button>
+            <h1>Filtro de Productos</h1>
+            <label for="categoria">Categoría:</label>
+            <select id="categoria">
+                <option value="Todos">Todos</option>
+                <option value="Fruta">Fruta</option>
+                <option value="Verdura">Verdura</option>
+            </select>
+            <br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <br>
+            <button onclick="filtrarProductos()">Filtrar</button>
+            <button onclick="window.location.href='index.html'">volver</button>
+            <br>
+            <div id="output"></div>
+            <script src="js/scrip.js"></script>
+            
    </section>
+
+   
 </body>
 </html>
-

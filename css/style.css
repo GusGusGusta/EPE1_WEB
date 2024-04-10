@@ -24,3 +24,16 @@ section{
     align-items: center;
     padding: 2rem 3rem;
 }
+
+select{
+font-size: 18px;
+text-align: center;
+position: relative;
+margin: 30px 0;
+max-width: 310px;
+border-bottom: 2px solid #fff;
+
+}
+
+
+

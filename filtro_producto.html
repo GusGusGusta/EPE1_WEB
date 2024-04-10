@@ -8,11 +8,21 @@
 </head>
 
     <body>
-        <section>
-        <h1>Formulario de contacto</h1>
-        <button>FILTRAR</button>
-       
-  <button onclick="window.location.href='index.html'">volver pagina princiapal</button>  
+        <section >
+        <h1>Filtro de Productos</h1>
+    <label for="categoria">Categoría:</label>
+    <select id="categoria">
+        <option value="Todos">Todos</option>
+        <option value="Fruta">Fruta</option>
+        <option value="Verdura">Verdura</option>
+    </select>
+    <br>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre">
+    <div id="output"></div>
+    <script src="js/scrip.js"></script>
+    <button onclick="filtrarProductos()">Filtrar</button>
+   </section>
 </body>
-
 </html>
+
